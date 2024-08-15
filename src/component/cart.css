@@ -1,43 +1,191 @@
 /* cart.css */
 
-/* Container styles */
+/* Cart Container */
 .cart-container {
-    display: flex;
-    flex-wrap: wrap;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 200px;
+}
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+/* Close Button */
+.close-button {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+/* Product Image */
+.cart-item img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.quantity-controls button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+  background-color: #2980b9;
+}
+
+.quantity-controls p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Total Price */
+.total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-top: 20px;
+}
+
+/* Buy Now Button */
+.buy-now-button {
+  padding: 10px 20px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.buy-now-button:hover {
+  background-color: #d35400;
+}
+
+/* Payment Form */
+.payment-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.payment-form h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.payment-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-form button[type="submit"]:hover {
+  background-color: #229954;
+}
+
+/* Cancel Button */
+.payment-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-form button:hover {
+  background-color: #c0392b;
+}
+
+/* Empty Cart Message */
+.empty-cart-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-container {
+      padding: 10px;
   }
-  
-  /* Individual item styles */
+
   .cart-item {
-    margin-top: 100px;
-    float: left;
-    margin-left: 20px;
-    border: 2px solid black;
-    width: 350px;
-    margin-bottom: 400px;
+      padding: 10px;
+      margin-bottom: 15px;
   }
-  
-  /* Close button style */
-  .close-button {
-    float: right;
-    cursor: pointer;
-  }
-  
-  /* Image style */
-  .cart-item img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Quantity controls style */
+
   .quantity-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+      flex-direction: column;
   }
-  
-  /* Total style */
-  .total {
-    margin-top: 20px;
-    font-size: 1.5em;
+
+  .quantity-controls button {
+      width: 100%;
   }
-  
+
+  .payment-form button {
+      width: 100%;
+  }
+}
