@@ -1,0 +1,94 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: #ffffff;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    background: #123;
+    padding: 20px;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-box {
+    width: 220px;
+    margin: 0 auto 25px;
+    position: relative;
+    box-shadow: 0 0 20px 9px #122;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #ffffff;
+}
+
+.btn {
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #5a6c9e, #2f58b6);
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.input-group {
+    width: 100%;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .input-group.move-right {
+    transform: translateX(50%);
+} */
+
+.input-field {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #2f58b6;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    text-align: center;
+}
+
+.submit-btn {
+    width: 80%; /* Reduce width to see the border-radius better */
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    background: linear-gradient(to right, #5a6c9e, #2f58b6);
+    border: 0;
+    border-radius: 20px; /* Border radius on all sides */
+    outline: none;
+    color: #ffffff;
+}
+
+span{
+    color: #ffffff;
+}
