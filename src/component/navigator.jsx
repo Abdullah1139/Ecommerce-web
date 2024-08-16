@@ -3,7 +3,7 @@ import Header from "./Header"
 import LoginForm from "./Login";
 import Product from "./Product";
 import Cart from "./cart";
-import Catalog from "./catalog";
+// import Catalog from "./catalog";
 import AddProduct from "./AddProduct";
 import RegistrationForm from "./registration";
 import Footer from "./footer";
@@ -15,7 +15,7 @@ const Navigator=()=>{
             <Header/>
             <Routes>
                 <Route path="/" element={<Product/>}/>
-                <Route path="catalog" element={<Catalog/>}/>
+                {/* <Route path="catalog" element={<Catalog/>}/> */}
                 <Route path="login" element={<LoginForm/>}/>
                 <Route path="cart" element={<Cart/>}/>
                 <Route path="addproduct" element={<AddProduct/>}/>
