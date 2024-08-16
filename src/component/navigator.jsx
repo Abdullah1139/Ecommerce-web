@@ -3,11 +3,9 @@ import Header from "./Header"
 import LoginForm from "./Login";
 import Product from "./Product";
 import Cart from "./cart";
-// import Catalog from "./catalog";
 import AddProduct from "./AddProduct";
 import RegistrationForm from "./registration";
 import Footer from "./footer";
-import Services from "./Services";
 
 const Navigator=()=>{
     return(
