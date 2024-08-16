@@ -11,7 +11,7 @@ const Header = () => {
         <div className="container">
           <Link className="navbar-brand" to="/">
             <img src="logo.png" alt="Logo" className="rounded-circle" style={{ width: '50px', height: '50px' }} />
-            <span className="ml-2 text-dark">Mens Wear</span>
+            <span className="ml-2 text-dark">Shop Now</span>
           </Link>
           <button
             className="navbar-toggler"

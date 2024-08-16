@@ -1,5 +1,5 @@
 import Navigator from './component/navigator'
-import './component/cart.css'
+// import './component/cart.css'
 
 function App() {
   return (
